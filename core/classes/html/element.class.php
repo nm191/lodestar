@@ -71,7 +71,7 @@
 
     public function __toString() {
       // prepare properties
-      if ($this->classes) { $this->params['class'] = implode(' ', $this->classes); }
+      if ($this->classes) { $this->params['class'] = $this->classes; }
       ksort($this->params);
       // build output array
       $return_ar[] = $this->tag;
