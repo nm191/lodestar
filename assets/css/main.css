@@ -1,6 +1,18 @@
 :root{
   --main-color: #005C89;
+  --main-color-highlight: rgb(0, 71, 107);
+  --main-color-transparent: rgb(0, 92, 137, 0.5);
+  --main-font-color: #fff;
+  --dark-font-color: #333;
 }
+
+*{
+  font-family: 'Poppins', sans-serif;
+  font-weight: 300;
+  font-size: 11pt;
+}
+
+/* LOGIN PAGE */
 
 .form-group label{
   font-weight: bold;
@@ -13,11 +25,15 @@ body.login-page{
 
 .login-container{
   margin: auto 0;
-  background-color: rgba(221,221,221, .6);
+  background-color: rgba(212, 212, 212, 0.616);
   padding: 25px 25px 0px 25px;
-  border-radius: 5px;
+  min-height: 65vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
   border: 1px solid;
   border-color: var(--main-color);
+  -webkit-backdrop-filter: blur(10px);
 }
 
 .login-row{
@@ -33,5 +49,99 @@ body.login-page{
   text-align: center;
   width: 100%;
   margin-top: 10px;
+  color: var(--dark-font-color);
 }
 
+/* TOP MENU */
+.top-menu{
+  background-color: var(--main-color);
+  padding: 0 1rem !important;
+}
+
+.top-menu a{
+  color: var(--main-font-color) !important;
+}
+
+.top-menu .dropdown-menu a{
+  color: var(--dark-font-color) !important;
+}
+
+.top-menu .navbar-nav a:hover{
+  background-color: var(--main-color-highlight) !important;
+}
+
+.top-menu .navbar-nav .nav-item.active a{
+  background-color: var(--main-color-highlight) !important;
+  font-weight: 400 !important;
+}
+
+/* SIDE BAR */
+.sidebar{
+  width: 10%;
+  height: 100vh;
+  background-color: var(--main-color);
+}
+
+.sidebar .navbar-nav a{
+  padding: 10px;
+  color: var(--main-font-color);
+}
+
+.sidebar .navbar-nav a:hover{
+  background-color: var(--main-color-highlight) !important;
+}
+
+.sidebar .navbar-nav .nav-item.active a{
+  background-color: var(--main-color-highlight) !important;
+  font-weight: 400 !important;
+}
+
+/* USER INFO DROPDOWN */
+.user-info-dropdown{
+  left: unset;
+  right: 0;
+}
+
+/* CONTENT */
+.content-container{
+  width: 90%;
+  padding-left: 20px;
+}
+
+/* STANDARD GENERATED LAYOUT ELEMENTS */
+.header-element{
+  font-weight: 300 !important;
+  color: var(--dark-font-color);
+  border-bottom: 1px solid var(--dark-font-color);
+  width: 100%;
+  margin: .5rem 1rem;
+}
+
+.box_container{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.box{
+  width: 30%;
+}
+
+.box ul li{
+  display: inline;
+}
+.box ul{
+  display: flex;
+  justify-content: space-around;
+  background-color: red;
+  
+}
+.box2{
+  background-color: green;
+  text-align: center;
+}
+
+
+.box2 h1{
+  font-size: 2em;
+}

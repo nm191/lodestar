@@ -19,20 +19,32 @@
 		<div class="row justify-content-center align-items-center login-row">
 			<div class="col-sm-5">
 				<div class="login-container">
-					<h1 class="display-3 text-center"><img src="assets/img/lodestar_logo.svg" alt="Lodestar Logo" class='lodestar-logo'></h1>
-						<div class="alert alert-info text-center">
+					<h1 class="display-3 text-center text-white">
+						<img src="assets/img/lodestar_logo.svg" alt="Lodestar Logo" class='lodestar-logo'>
+					</h1>
+						<!-- <div class="alert alert-light text-center">
 								Please login to gain access to Lodestar.
-						</div>
+						</div> -->
+						
 						<div class="alert-container">
 							
 						</div>
 						<form id='login-form'>
-							<div class="form-group">
-								<label for="inputEmail">Email address</label>
+							<p class="lead text-center">
+								Login to your account
+							</p>
+							<div class="input-group form-group">
+								<div class="input-group-prepend">
+									<span class="input-group-text" id="basic-addon1"><?= FontAwesome::getIcon('user', [], 'fal');?></span>
+								</div>
+								<!-- <label for="inputEmail">Email address</label> -->
 								<input type="email" class="form-control" id="inputEmail" name="email_address" placeholder="Enter email">
 							</div>
-							<div class="form-group">
-								<label for="inputPassword">Password</label>
+							<div class="input-group form-group">
+								<div class="input-group-prepend">
+									<span class="input-group-text" id="basic-addon1"><?= FontAwesome::getIcon('lock-alt', [], 'fal');?></span>
+								</div>
+								<!-- <label for="inputPassword">Password</label> -->
 								<input type="password" class="form-control" id="inputPassword" name="password" placeholder="Password">
 							</div>
 							<input type="hidden" name="page_name" value="login_handler">

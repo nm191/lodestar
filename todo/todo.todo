@@ -1,0 +1,28 @@
+TODO:
+  Products:
+    ☐ Form toevoegen producten
+    ☐ Form toevoegen categorien
+    ☐ Form toevoegen maten
+    ☐ Form toevoegen kleuren
+    ☐ Overzicht producten
+    ☐ Voorraadbeheer
+  
+  Orders:
+    ☐ Form configuratie orders
+    ☐ Overzicht orders
+      ☐ Afgeronde orders
+      ☐ Lopende orders
+  
+  Customers:
+    ☐ Overzicht klanten
+    ☐ Klantbeheer
+    ☐ Orders per klant
+
+  Dashboard: 
+    ☐ Statistieken
+
+  Overall:
+    ✔ FontAwesome Class @done(18-10-26 12:23)
+    ☐ Bootstrap Class
+    ☐ Tabmenu class
+
